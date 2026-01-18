@@ -42,6 +42,7 @@ The curriculum is designed to move from local compiler issues to complex system-
 | :--- | :--- | :--- | :--- |
 | ⭐ | [rust-traits-mismatch](./exercises/rust-traits-mismatch) | Rust | Fixing cross-file interface discrepancies. |
 | ⭐ | [docker-permissions](./exercises/docker-permissions) | Docker, Node.js | Fixing Docker container permission errors. |
+| ⭐ | [middleware-ordering](./exercises/middleware-ordering) | Node.js, Express | Fixing Express middleware execution order bugs. |
 
 
 ## News

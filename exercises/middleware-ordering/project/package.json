@@ -1,0 +1,16 @@
+{
+  "name": "middleware-ordering-demo",
+  "version": "1.0.0",
+  "description": "Express middleware ordering bug demonstration",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": ["express", "middleware", "bug", "exercise"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
