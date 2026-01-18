@@ -41,6 +41,7 @@ The curriculum is designed to move from local compiler issues to complex system-
 | Difficulty | Exercise Name | Stack | Core Learning Objective |
 | :--- | :--- | :--- | :--- |
 | ⭐ | [rust-traits-mismatch](./exercises/rust-traits-mismatch) | Rust | Fixing cross-file interface discrepancies. |
+| ⭐ | [docker-permissions](./exercises/docker-permissions) | Docker, Node.js | Fixing Docker container permission errors. |
 
 
 ## News
