@@ -38,6 +38,10 @@ Plan Mode decouples Thinking from Doing, shifting the AI from an impulsive "Chat
 
 The curriculum is designed to move from local compiler issues to complex system-wide architectural failures.
 
+| Difficulty | Exercise Name | Stack | Core Learning Objective |
+| :--- | :--- | :--- | :--- |
+| ⭐ | [rust-traits-mismatch](./exercises/rust-traits-mismatch) | Rust | Fixing cross-file interface discrepancies. |
+
 
 ## News
 
