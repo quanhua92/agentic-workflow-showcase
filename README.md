@@ -44,6 +44,7 @@ The curriculum is designed to move from local compiler issues to complex system-
 | ⭐ | [docker-permissions](./exercises/docker-permissions) | Docker, Node.js | Fixing Docker container permission errors. |
 | ⭐ | [middleware-ordering](./exercises/middleware-ordering) | Node.js, Express | Fixing Express middleware execution order bugs. |
 | ⭐⭐ | [rust-deadlocks](./exercises/rust-deadlocks) | Rust | Resolving multi-threaded deadlock through locking order analysis. |
+| ⭐⭐⭐ | [rust-memory-leaks](./exercises/rust-memory-leaks) | Rust | Identifying and fixing reference cycles that bypass the borrow checker. |
 
 
 ## News
