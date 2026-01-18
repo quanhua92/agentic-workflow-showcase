@@ -7,18 +7,26 @@ const redis = new Redis(process.env.REDIS_HOST || 'localhost');
 app.use(express.json());
 
 app.post('/order', async (req, res) => {
-  const stock = await redis.get('inventory');
   const workerId = process.env.HOSTNAME || 'unknown';
 
-  // Simulate processing latency to widen the race window
-  await new Promise(resolve => setTimeout(resolve, 150));
+  // Atomic Lua script: check stock and decrement in one operation
+  const script = `
+    local stock = redis.call('GET', KEYS[1])
+    if stock and tonumber(stock) > 0 then
+      redis.call('SET', KEYS[1], stock - 1)
+      return {1, stock - 1}
+    else
+      return {0, stock}
+    end
+  `;
 
-  if (stock > 0) {
-    await redis.set('inventory', stock - 1);
-    console.log(`[${workerId}] Order fulfilled. Stock: ${stock} -> ${stock - 1}`);
-    res.status(200).json({ success: true, remaining: stock - 1 });
+  const [success, remaining] = await redis.eval(script, 1, 'inventory');
+
+  if (success === 1) {
+    console.log(`[${workerId}] Order fulfilled. Remaining: ${remaining}`);
+    res.status(200).json({ success: true, remaining });
   } else {
-    console.log(`[${workerId}] Order rejected. Stock: ${stock}`);
+    console.log(`[${workerId}] Order rejected. Stock: ${remaining}`);
     res.status(429).json({ success: false, message: 'Out of stock' });
   }
 });
