@@ -53,9 +53,11 @@ The curriculum is designed to move from local compiler issues to complex system-
 
 - **2026-01-18**: [GitHub Copilot now supports OpenCode](https://github.blog/changelog/2026-01-16-github-copilot-now-supports-opencode/)
 - **2026-01-16**: [Ollama: Claude Code with Anthropic API compatibility](https://ollama.com/blog/claude)
+- **2026-01-14**: [GitHub Copilot CLI: Enhanced agents, context management, and new ways to install](https://github.blog/changelog/2026-01-14-github-copilot-cli-enhanced-agents-context-management-and-new-ways-to-install/)
+- **2026-01-12**: [Even Linus Torvalds is vibe coding now](https://www.zdnet.com/article/linus-torvalds-vibe-coding-ai/)
 - **2026-01-10**: [Code Is Cheap Now. Software Isn’t.](https://www.chrisgregori.dev/opinion/code-is-cheap-now-software-isnt)
 - **2026-01-09**: [OpenCode no longer works with the Claude Max plan](https://github.com/anthropics/claude-code/issues/17118)
-
+- **2025-12-27**: [Andrej Karpathy on Vibe Coding](https://www.reddit.com/r/singularity/comments/1pxau7k/even_karpathy_feels_like_he_cant_keep_up_vibe/)
 
 ## References
 
