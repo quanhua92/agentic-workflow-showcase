@@ -1,0 +1,13 @@
+{
+  "name": "k8s-mismatch-app",
+  "version": "1.0.0",
+  "description": "Express app for Kubernetes debugging exercise",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

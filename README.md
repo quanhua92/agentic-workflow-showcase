@@ -46,6 +46,7 @@ The curriculum is designed to move from local compiler issues to complex system-
 | ⭐⭐ | [rust-deadlocks](./exercises/rust-deadlocks) | Rust | Resolving multi-threaded deadlock through locking order analysis. |
 | ⭐⭐⭐ | [distributed-race-condition](./exercises/distributed-race-condition) | Docker, Node.js, Redis | Fixing inventory overselling across distributed API replicas. |
 | ⭐⭐⭐ | [rust-memory-leaks](./exercises/rust-memory-leaks) | Rust | Identifying and fixing reference cycles that bypass the borrow checker. |
+| ⭐⭐⭐⭐ | [k8s-mismatch](./exercises/k8s-mismatch) | Kubernetes, Kind, Node.js | Debugging multi-layer Kubernetes networking and probe failures. |
 
 
 ## News
