@@ -14,4 +14,4 @@ Identify and fix a logical memory leak in Rust that bypasses the borrow checker 
 2. **Initialize Claude Code:** Run the command `claude`.
 3. **Trigger Plan Mode:** Press `Shift+Tab` to enter **Plan Mode**, then paste:
 
-> The application crashes under load after consuming excessive memory. Perform a system analysis of the code and runtime behavior. Use available tools to identify the root cause of the resource issue. Propose a plan to refactor the data structures and verify the fix by monitoring resource stability during execution.
+> The application crashes under load after consuming excessive memory. Perform a system analysis of the code and runtime behavior. Use available tools (e.g., `top`, `htop`, or similar utilities for monitoring RAM) to identify the root cause of the resource issue. Verify the bug exists first. Propose a plan to fix it and verify the solution by monitoring resource stability during execution.
