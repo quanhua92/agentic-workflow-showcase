@@ -30,7 +30,7 @@ You need the following tools installed:
 2. **Initialize Claude Code:** Run the command `claude`.
 3. **Trigger Plan Mode:** Press `Shift+Tab` to enter **Plan Mode**, then paste:
 
-> First, read the README.md file for instructions on how to set up and run the Kind cluster. Then build the Docker image, load it into the Kind cluster, and apply the Kubernetes manifests in the k8s/ directory. The system is broken - use both the Kubernetes MCP tools to investigate what's wrong. Identify, verify and fix all issues until the system is stable and reachable.
+> First, read the README.md file for instructions on how to set up and run the Kind cluster. Then build the Docker image, load it into the Kind cluster, and apply the Kubernetes manifests in the k8s/ directory. The system is broken - use the Kubernetes MCP tools to investigate what's wrong. Identify, verify and fix all issues until the system is stable and reachable.
 
 ## Success Criteria
 - `kubectl get pods` shows all pods Running with 0 restarts
