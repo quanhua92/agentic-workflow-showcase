@@ -7,7 +7,7 @@ pub struct News {
 }
 
 impl Summary for News {
-    fn summarize(&self) -> &str {
-        &self.author
+    fn summarize(&self) -> String {
+        self.headline.clone()
     }
 }
