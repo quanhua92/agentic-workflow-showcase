@@ -4,7 +4,7 @@ mod logic;
 #[cfg(test)]
 mod tests;
 
-fn notify<T: traits::Summary>(item: T) {
+fn notify<T: traits::Summary>(item: &T) {
     println!("Breaking news: {}", item.summarize());
 }
 
@@ -18,7 +18,7 @@ fn main() {
     };
 
     println!("Attempting to notify about article...");
-    notify(article);
+    notify(&article);
 
     println!("Article author: {}", article.author);
 }
